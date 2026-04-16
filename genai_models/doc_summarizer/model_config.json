@@ -32,7 +32,7 @@
   "evaluation_metrics": {
     "rouge1": 0.82,
     "rouge2": 0.75,
-    "rougeL": 0.8,
+    "rougeL": 0.80,
     "bleu": 0.78,
     "faithfulness_score": 0.91,
     "hallucination_rate": 0.05
@@ -41,5 +41,13 @@
     "content_filtering_enabled": true,
     "max_requests_per_minute": 100,
     "timeout_seconds": 30
+  },
+  "deployment": {
+    "endpoint_url": "",
+    "method": "POST",
+    "input_format": "json_text",
+    "response_field": "generated_answer",
+    "auth_header": "",
+    "notes": "Set endpoint_url to your deployed GenAI model endpoint on Render. Expected POST body: {input_text: string, system_prompt: string}. Expected response: {generated_answer: string}"
   }
 }
