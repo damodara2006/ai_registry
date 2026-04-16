@@ -1,0 +1,70 @@
+{
+  "features": [
+    {
+      "name": "age",
+      "type": "numerical",
+      "description": "Customer age in years",
+      "min_value": 18,
+      "max_value": 100
+    },
+    {
+      "name": "transaction_amount",
+      "type": "numerical",
+      "description": "Transaction amount in USD",
+      "min_value": 0,
+      "max_value": 50000
+    },
+    {
+      "name": "merchant_category",
+      "type": "categorical",
+      "description": "Merchant category code",
+      "categories": [
+        "retail",
+        "travel",
+        "groceries",
+        "online_shopping",
+        "entertainment",
+        "jewelry"
+      ]
+    },
+    {
+      "name": "transaction_time_hour",
+      "type": "numerical",
+      "description": "Hour of day (0-23)",
+      "min_value": 0,
+      "max_value": 23
+    },
+    {
+      "name": "days_since_account_open",
+      "type": "numerical",
+      "description": "Days since account was opened",
+      "min_value": 1,
+      "max_value": 3650
+    },
+    {
+      "name": "transaction_count_24h",
+      "type": "numerical",
+      "description": "Number of transactions in last 24 hours",
+      "min_value": 0,
+      "max_value": 100
+    },
+    {
+      "name": "average_transaction_amount",
+      "type": "numerical",
+      "description": "Average transaction amount (30-day rolling)",
+      "min_value": 0,
+      "max_value": 10000
+    },
+    {
+      "name": "location_change_flag",
+      "type": "categorical",
+      "description": "Whether transaction location differs from typical",
+      "categories": [
+        0,
+        1
+      ]
+    }
+  ],
+  "total_features": 8,
+  "feature_engineering_notes": "Features engineered from transaction history and customer profile"
+}

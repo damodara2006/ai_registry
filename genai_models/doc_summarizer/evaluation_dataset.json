@@ -1,0 +1,42 @@
+[
+  {
+    "id": "eval_001",
+    "question": "Summarize the key findings from this quarterly earnings report.",
+    "input_text": "Q3 2024 Earnings Report: Revenue reached $2.5B, up 15% year-over-year. Operating expenses decreased by 5%. Net profit margin improved to 18%. We expanded into 3 new markets. Customer satisfaction scores hit all-time high of 94%. R&D investment increased by 20% to drive innovation. We hired 200 new engineers.",
+    "generated_answer": "In Q3 2024, the company achieved $2.5B in revenue with 15% year-over-year growth. Operating costs declined 5% while net profit margin reached 18%. The company expanded into three new markets and increased R&D spending by 20%. Customer satisfaction reached 94%, an all-time high.",
+    "ground_truth": "Q3 results show strong performance: $2.5B revenue (+15% YoY), improved profitability (18% net margin), expanded market presence (3 new markets), and increased R&D investment (20% increase).",
+    "retrieved_context": "Quarterly business review document, financial statements, market expansion announcements"
+  },
+  {
+    "id": "eval_002",
+    "question": "What are the main challenges identified in this technical report?",
+    "input_text": "Technical Report on System Performance: The system experiences latency issues during peak hours, with response times exceeding 5 seconds for 20% of requests. Database query optimization is needed. The caching layer is underutilized. Memory usage spikes to 85% during high-traffic periods. We recommend implementing query indexes and upgrading the cache strategy.",
+    "generated_answer": "The system faces three main challenges: latency issues during peak hours with 20% of requests exceeding 5 seconds, underutilized caching layer, and memory usage spikes to 85% during high traffic. Solutions include optimizing database queries with indexes and upgrading the cache strategy.",
+    "ground_truth": "Main challenges: high latency (>5s for 20% of requests), suboptimal database performance, underutilized caching, and high memory consumption (85%). Recommendations: database indexing and cache optimization.",
+    "retrieved_context": "System performance metrics, infrastructure logs, engineering documentation"
+  },
+  {
+    "id": "eval_003",
+    "question": "Identify the key recommendations from this research paper.",
+    "input_text": "Research Paper Abstract: Our study analyzed 500 machine learning projects. We found that projects with proper data validation frameworks succeeded 85% of the time vs 45% without validation. We recommend implementing strict data quality checks, automated data profiling, and continuous monitoring. Teams should invest in data governance tools. Documentation and code reviews significantly impact project success.",
+    "generated_answer": "Key recommendations include: implement data quality checks and automated data profiling, invest in data governance tools, perform continuous monitoring, prioritize code reviews, and maintain comprehensive documentation. Data validation is critical as validated projects succeed 85% vs 45% without it.",
+    "ground_truth": "Recommendations: establish data validation frameworks, use automated data profiling tools, invest in governance infrastructure, implement continuous monitoring, ensure code reviews, and maintain detailed documentation.",
+    "retrieved_context": "Machine learning best practices research, data science methodology papers, project success studies"
+  },
+  {
+    "id": "eval_004",
+    "question": "What is the proposed solution in this business proposal?",
+    "input_text": "Business Proposal: To address declining customer retention (currently 65%), we propose implementing a loyalty rewards program offering points for purchases and referrals. Members receive exclusive early access to new products. Program tiers (Silver, Gold, Platinum) provide escalating benefits. Initial investment of $500K expected to increase retention to 80% within 12 months.",
+    "generated_answer": "The proposed solution is a tiered loyalty program (Silver/Gold/Platinum) offering purchase and referral rewards, exclusive product access, and escalating member benefits. With a $500K investment, the program aims to improve customer retention from 65% to 80% within one year.",
+    "ground_truth": "Implement a multi-tier loyalty rewards program costing $500K to increase retention from 65% to 80% through purchase/referral incentives and exclusive benefits.",
+    "retrieved_context": "Customer retention metrics, competitive loyalty programs, marketing strategy documents"
+  },
+  {
+    "id": "eval_005",
+    "question": "Summarize the action items from these meeting notes.",
+    "input_text": "Meeting Notes (April 15, 2024): Discussed Q2 product roadmap. Action items: 1) John to complete API documentation by April 30. 2) Sarah to run customer interviews by April 25 to gather feature requests. 3) Team to review security audit findings by April 22. 4) Marketing to prepare launch campaign by May 1. 5) All team leads to submit resource requirements by April 20.",
+    "generated_answer": "Action items identified: API documentation (John, due April 30), customer interviews (Sarah, due April 25), security audit review (team, due April 22), launch campaign prep (Marketing, due May 1), and resource requirement submissions (team leads, due April 20).",
+    "ground_truth": "Five action items assigned: API docs (John-4/30), customer interviews (Sarah-4/25), security review (Team-4/22), campaign prep (Marketing-5/1), resource submissions (Leads-4/20).",
+    "retrieved_context": "Meeting minutes, Q2 planning documents, project timeline"
+  }
+]

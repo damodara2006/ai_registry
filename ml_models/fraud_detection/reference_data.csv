@@ -1,0 +1,10 @@
+age,transaction_amount,merchant_category,transaction_time_hour,days_since_account_open,transaction_count_24h,average_transaction_amount,location_change_flag,prediction_score,actual_label
+25,150.5,retail,14,365,5,120.0,0,0.15,0
+45,5000.0,travel,2,1200,1,3000.0,1,0.89,1
+32,75.25,groceries,11,600,12,85.0,0,0.08,0
+58,2500.0,online_shopping,20,800,3,800.0,1,0.76,1
+22,50.0,entertainment,19,120,20,45.0,0,0.05,0
+51,10000.0,travel,3,2000,1,2500.0,1,0.92,1
+30,200.0,entertainment,21,500,8,150.0,0,0.12,0
+67,3000.0,jewelry,10,1500,2,1500.0,1,0.85,1
+35,120.0,groceries,15,900,10,130.0,0,0.1,0

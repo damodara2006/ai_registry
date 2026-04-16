@@ -1,0 +1,45 @@
+{
+  "model_metadata": {
+    "model_name": "Document Summarizer",
+    "model_id": "doc_summarizer_v1",
+    "version": "1.0.0",
+    "description": "Generates concise, accurate summaries of lengthy documents using LLM"
+  },
+  "model_details": {
+    "base_model": "GPT-4",
+    "provider": "OpenAI",
+    "model_type": "text_generation",
+    "task_type": "text_summarization"
+  },
+  "ownership": {
+    "owner": "AI Engineering Team",
+    "team": "NLP & Content",
+    "contact": "ai-eng@company.com"
+  },
+  "governance": {
+    "created_date": "2026-04-16T15:24:29.968317",
+    "last_updated": "2026-04-16T15:24:29.968323",
+    "deployment_status": "production",
+    "governance_framework": "ISO 42001"
+  },
+  "hyperparameters": {
+    "temperature": 0.5,
+    "max_tokens": 500,
+    "top_p": 0.9,
+    "frequency_penalty": 0.0,
+    "presence_penalty": 0.0
+  },
+  "evaluation_metrics": {
+    "rouge1": 0.82,
+    "rouge2": 0.75,
+    "rougeL": 0.8,
+    "bleu": 0.78,
+    "faithfulness_score": 0.91,
+    "hallucination_rate": 0.05
+  },
+  "safety_settings": {
+    "content_filtering_enabled": true,
+    "max_requests_per_minute": 100,
+    "timeout_seconds": 30
+  }
+}

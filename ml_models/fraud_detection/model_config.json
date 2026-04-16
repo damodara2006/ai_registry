@@ -1,0 +1,38 @@
+{
+  "model_metadata": {
+    "model_name": "Fraud Detection Model",
+    "model_id": "fraud_detection_v1",
+    "version": "1.0.0",
+    "description": "Detects fraudulent transactions using ensemble ML classification"
+  },
+  "technical_details": {
+    "framework": "scikit-learn",
+    "algorithm": "Random Forest",
+    "input_type": "tabular",
+    "output_type": "binary_classification"
+  },
+  "ownership": {
+    "owner": "Data Science Team",
+    "team": "Risk & Compliance",
+    "contact": "ds-team@company.com"
+  },
+  "governance": {
+    "created_date": "2026-04-16T15:24:29.967516",
+    "last_updated": "2026-04-16T15:24:29.967533",
+    "deployment_status": "production",
+    "governance_framework": "ISO 42001"
+  },
+  "performance_metrics": {
+    "accuracy": 0.95,
+    "precision": 0.92,
+    "recall": 0.89,
+    "f1_score": 0.9,
+    "auc_roc": 0.93
+  },
+  "data_requirements": {
+    "training_data_size": 50000,
+    "features": 8,
+    "target_variable": "actual_label",
+    "class_distribution": "0: 95%, 1: 5%"
+  }
+}
