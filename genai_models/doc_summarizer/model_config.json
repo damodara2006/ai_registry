@@ -32,7 +32,7 @@
   "evaluation_metrics": {
     "rouge1": 0.82,
     "rouge2": 0.75,
-    "rougeL": 0.80,
+    "rougeL": 0.8,
     "bleu": 0.78,
     "faithfulness_score": 0.91,
     "hallucination_rate": 0.05
@@ -43,7 +43,7 @@
     "timeout_seconds": 30
   },
   "deployment": {
-    "endpoint_url": "",
+    "endpoint_url": "https://groq-model-endpoint.onrender.com/summarize",
     "method": "POST",
     "input_format": "json_text",
     "response_field": "generated_answer",
