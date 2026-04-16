@@ -6,8 +6,8 @@
     "description": "Generates concise, accurate summaries of lengthy documents using LLM"
   },
   "model_details": {
-    "base_model": "GPT-4",
-    "provider": "OpenAI",
+    "base_model": "llama-3.1-8b-instant",
+    "provider": "Groq",
     "model_type": "text_generation",
     "task_type": "text_summarization"
   },
@@ -18,24 +18,26 @@
   },
   "governance": {
     "created_date": "2026-04-16T15:24:29.968317",
-    "last_updated": "2026-04-16T15:24:29.968323",
+    "last_updated": "2026-04-16T14:40:00.000000Z",
     "deployment_status": "production",
     "governance_framework": "ISO 42001"
   },
   "hyperparameters": {
-    "temperature": 0.5,
-    "max_tokens": 500,
-    "top_p": 0.9,
+    "temperature": 0.3,
+    "max_tokens": 512,
+    "top_p": 1.0,
     "frequency_penalty": 0.0,
     "presence_penalty": 0.0
   },
   "evaluation_metrics": {
-    "rouge1": 0.82,
-    "rouge2": 0.75,
-    "rougeL": 0.8,
-    "bleu": 0.78,
-    "faithfulness_score": 0.91,
-    "hallucination_rate": 0.05
+    "avg_faithfulness": 0.6606,
+    "avg_hallucination_rate": 0.3394,
+    "avg_context_adherence": 0.2360,
+    "faithfulness_threshold": 0.70,
+    "hallucination_risk": true,
+    "last_evaluated": "2026-04-16T14:40:00.000000Z",
+    "evaluation_source": "ragas_token_overlap",
+    "live_endpoint_used": true
   },
   "safety_settings": {
     "content_filtering_enabled": true,
@@ -48,6 +50,18 @@
     "input_format": "json_text",
     "response_field": "generated_answer",
     "auth_header": "",
-    "notes": "Set endpoint_url to your deployed GenAI model endpoint on Render. Expected POST body: {input_text: string, system_prompt: string}. Expected response: {generated_answer: string}"
+    "platform": "Render",
+    "runtime": "Python 3.11 + gunicorn + uvicorn",
+    "input_schema": {
+      "input_text": "string",
+      "system_prompt": "string",
+      "question": "string (optional)"
+    },
+    "output_schema": {
+      "generated_answer": "string",
+      "model_used": "string",
+      "input_length": "int",
+      "output_length": "int"
+    }
   }
 }
