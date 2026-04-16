@@ -26,7 +26,7 @@
     "accuracy": 0.95,
     "precision": 0.92,
     "recall": 0.89,
-    "f1_score": 0.9,
+    "f1_score": 0.90,
     "auc_roc": 0.93
   },
   "data_requirements": {
@@ -34,5 +34,13 @@
     "features": 8,
     "target_variable": "actual_label",
     "class_distribution": "0: 95%, 1: 5%"
+  },
+  "deployment": {
+    "endpoint_url": "",
+    "method": "POST",
+    "input_format": "json_row",
+    "response_field": "prediction_score",
+    "auth_header": "",
+    "notes": "Set endpoint_url to your deployed ML model endpoint. Expected POST body: {age, transaction_amount, merchant_category, transaction_time_hour, days_since_account_open, transaction_count_24h, average_transaction_amount, location_change_flag}. Expected response: {prediction_score: float, predicted_label: int}"
   }
 }
